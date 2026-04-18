@@ -7,3 +7,6 @@ from sklearn.model_selection import train_test_split
 
 # Step 1: Get stock data
 stock = yf.download("AAPL", start="2020-01-01", end="2024-01-01")
+
+# Step 2: Keep only closing price
+data = stock[['Close']]
