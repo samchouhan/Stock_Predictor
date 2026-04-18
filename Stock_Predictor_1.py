@@ -4,3 +4,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
+
+# Step 1: Get stock data
+stock = yf.download("AAPL", start="2020-01-01", end="2024-01-01")
