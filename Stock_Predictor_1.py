@@ -10,3 +10,7 @@ stock = yf.download("AAPL", start="2020-01-01", end="2024-01-01")
 
 # Step 2: Keep only closing price
 data = stock[['Close']]
+
+# Step 3: Create future prediction column
+future_days = 30
+data['Prediction'] = data[['Close']].shift(-future_days)
