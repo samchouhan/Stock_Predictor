@@ -1,0 +1,15 @@
+After seeing the results based on Linear Regression model it is seen that the more the dataset 
+the more is the accuracy of model but it is misleading.
+
+With one year of dataset the future prediction showed around 30% of uptrend in ADANI POWER stock
+and with 
+5 year of dataset it showed 42% of bullish trend in the same stock with accuracy of model increased to 
+0.9 from 0.6 ...
+
+These numbers look good on the graph but in reality the stock I chose is volatile and depends on the market
+trends too ...
+
+So the problem with Linear Regression model is that it shows results solely based on dataset trend making
+the numbers look less realistic . 
+
+Hence, not good for predicting future of stocks .
