@@ -9,6 +9,9 @@ and with
 These numbers look good on the graph but in reality the stock I chose is volatile and depends on the market
 trends too ...
 
+For example :- Right now America and Iran war is going on that would affect the market by some measure now that's
+where this model is left behind.
+
 So the problem with Linear Regression model is that it shows results solely based on dataset trend making
 the numbers look less realistic . 
 
