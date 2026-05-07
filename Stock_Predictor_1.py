@@ -10,7 +10,7 @@ TIME = input("Enter time period (5y / 1y / 1m): ")
 
 # Select dataset based on input
 if TIME == "5y":
-    stock = yf.download("ADANIPOWER.NS", start="2021-01-01", end="2026-04-18")
+    stock = yf.download("JISLJALEQS.NS", start="2021-01-01", end="2026-04-18")
 elif TIME == "1y":
     stock = yf.download("ADANIPOWER.NS", start="2025-01-01", end="2026-04-18")
 elif TIME == "1m":
