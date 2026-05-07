@@ -12,9 +12,9 @@ TIME = input("Enter time period (5y / 1y / 1m): ")
 if TIME == "5y":
     stock = yf.download("JISLJALEQS.NS", start="2021-01-01", end="2026-04-18")
 elif TIME == "1y":
-    stock = yf.download("ADANIPOWER.NS", start="2025-01-01", end="2026-04-18")
+    stock = yf.download("JISLJALEQS.NS", start="2025-01-01", end="2026-04-18")
 elif TIME == "1m":
-    stock = yf.download("ADANIPOWER.NS", start="2026-03-01", end="2026-04-01")
+    stock = yf.download("JISLJALEQS.NS", start="2026-03-01", end="2026-04-01")
 else:
     print("Invalid input, defaulting to 1 year")
     stock = yf.download("ADANIPOWER.NS", start="2025-01-01", end="2026-04-01")
