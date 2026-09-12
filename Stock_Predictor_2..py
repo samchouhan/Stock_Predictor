@@ -10,5 +10,9 @@ import yfinance as yf
 ticker = "JISLJALEQS.NS"
 TIME = input("Enter time period (5y / 1y / 1m): ").strip().lower()
 
-period_map = {
-    "5y": ("2021-01-01", "2026-04-18"),
+period_map = {"5y": "5y", "1y": "1y", "1m": "1mo"}
+fetch_period = period_map.get(TIME, "1y")
+
+stock = yf.Ticker(ticker).history(period=fetch_period)
+
+#yf.Ticker(...).history(): Connects to Yahoo Finance and downloads historical price data (Open, High, Low, Close, Volume) for the chosen stock.
