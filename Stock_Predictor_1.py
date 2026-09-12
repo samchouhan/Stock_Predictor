@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
-
+#This is the Linear Regression model for stock price prediction. It uses historical stock data to predict future prices based on the closing price of the stock.
 # Ask user
 TIME = input("Enter time period (5y / 1y / 1m): ")
 
