@@ -16,3 +16,4 @@ fetch_period = period_map.get(TIME, "1y")
 stock = yf.Ticker(ticker).history(period=fetch_period)
 
 #yf.Ticker(...).history(): Connects to Yahoo Finance and downloads historical price data (Open, High, Low, Close, Volume) for the chosen stock.
+#period_map: Maps your input (like "1m") to the format Yahoo Finance expects ("1mo").
